@@ -1,5 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+
 (function (root) {
-  var Random = typeof module !== "undefined" ? require("../lib/random") : root.Random;
+  var Random = typeof module !== "undefined" ? require("random/lib/random") : root.Random;
   describe("Random", function () {
     describe("constructor", function () {
       it("returns a Random if called without new", function () {
@@ -302,3 +304,5 @@
     });
   });
 }(this));
+
+return module.exports;});

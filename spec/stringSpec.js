@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 (function (Random) {
   describe("string", function () {
     describe("with pool = 'abcde'", function () {
@@ -59,4 +60,6 @@
       });
     });
   });
-}(typeof module !== "undefined" ? require("../lib/random") : Random));
+}(typeof module !== "undefined" ? require("random/lib/random") : Random));
+
+return module.exports;});

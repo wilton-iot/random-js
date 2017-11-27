@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 (function (Random) {
   describe("integer distribution", function () {
     [-Math.pow(2, 53) - 2, -Infinity, NaN, Infinity].forEach(function (min) {
@@ -366,4 +367,6 @@
       expect(actual).toBe(0x20000000000000);
     });
   });
-}(typeof module !== "undefined" ? require("../lib/random") : Random));
+}(typeof module !== "undefined" ? require("random/lib/random") : Random));
+
+return module.exports;});

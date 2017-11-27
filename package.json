@@ -34,5 +34,13 @@
   },
   "testling": {
     "files": "spec/*.js"
+  },
+  "wilton": {
+    "excludes": [
+      "benchmark",
+      "spec",
+      "CHANGELOG.md",
+      "karma.conf.js"
+    ]
   }
 }

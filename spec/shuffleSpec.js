@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 (function (Random) {
   describe("shuffle", function () {
     it("generates evenly-distributed integers from [0, n) where n is the length and decreases each iteration, swapping items each time", function () {
@@ -65,4 +66,6 @@
       });
     });
   });
-}(typeof module !== "undefined" ? require("../lib/random") : Random));
+}(typeof module !== "undefined" ? require("random/lib/random") : Random));
+
+return module.exports;});

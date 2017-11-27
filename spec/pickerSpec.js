@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 (function (Random) {
   describe("picker", function () {
     it("returns a function that returns undefined when passed an empty array", function () {
@@ -76,4 +77,6 @@
       expect(actual).toBe(dummy);
     });
   });
-}(typeof module !== "undefined" ? require("../lib/random") : Random));
+}(typeof module !== "undefined" ? require("random/lib/random") : Random));
+
+return module.exports;});
