@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 (function (Random) {
   describe("sample", function () {
     [-Infinity, Infinity, NaN, -1, 5].forEach(function (sampleSize) {
@@ -78,4 +78,4 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
   });
 }(typeof module !== "undefined" ? require("random/lib/random") : Random));
 
-return module.exports;});
+require = requireOrig;});

@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 (function (Random) {
   describe("die", function () {
     it("returns an integer distribution from 1 to sideCount", function () {
@@ -14,4 +14,4 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
   });
 }(typeof module !== "undefined" ? require("random/lib/random") : Random));
 
-return module.exports;});
+require = requireOrig;});
